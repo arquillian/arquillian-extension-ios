@@ -14,7 +14,7 @@
 
     <properties>
         <version.arquillian>1.0.2.Final</version.arquillian>
-        <version.drone>1.1.0.Final-SNAPSHOT</version.drone>
+        <version.drone>1.1.0.CR3</version.drone>
         <version.jgit>2.0.0.201206130900-r</version.jgit>
         <version.svnkit>1.7.5-v1</version.svnkit>
     </properties>

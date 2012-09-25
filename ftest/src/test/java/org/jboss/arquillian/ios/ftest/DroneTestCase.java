@@ -21,7 +21,7 @@ import org.jboss.arquillian.drone.api.annotation.Drone;
 import org.jboss.arquillian.junit.Arquillian;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.openqa.selenium.iphone.IPhoneDriver;
+import org.openqa.selenium.WebDriver;
 
 /**
  * @author <a href="jpapouse@redhat.com">Jan Papousek</a>
@@ -30,7 +30,7 @@ import org.openqa.selenium.iphone.IPhoneDriver;
 public class DroneTestCase {
 
     @Drone
-    private IPhoneDriver browser;
+    private WebDriver browser;
 
     @Test
     public void open() {
