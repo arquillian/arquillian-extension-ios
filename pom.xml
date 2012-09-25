@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- Parent -->
+    <parent>
+        <groupId>org.jboss</groupId>
+        <artifactId>jboss-parent</artifactId>
+        <version>9</version>
+        <relativePath/>
+    </parent>
+
+    <!-- Model version -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Artifact Configuration -->
+    <groupId>org.jboss.arquillian.extension</groupId>
+    <artifactId>arquillian-ios-aggregator</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>arquillian-ios-aggregator</name>
+
+    <developers>
+        <developer>
+            <name>Jan Papousek</name>
+            <email>jpapouse@redhat.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://git@github.com:arquillian/arquillian-extension-ios.git</connection>
+        <developerConnection>scm:git:ssh://github.com/arquillian/arquillian-extension-ios.git</developerConnection>
+        <url>git://github.com/arquillian/arquillian-extension-ios.git</url>
+    </scm>
+
+    <!-- Modules -->
+    <modules>
+        <module>api</module>
+        <module>bom</module>
+        <module>build</module>
+        <module>depchain</module>
+        <module>drone</module>
+        <module>ftest</module>
+        <module>impl</module>
+        <module>resources</module>
+        <module>spi</module>
+        <module>util</module>
+    </modules>
+
+</project>
