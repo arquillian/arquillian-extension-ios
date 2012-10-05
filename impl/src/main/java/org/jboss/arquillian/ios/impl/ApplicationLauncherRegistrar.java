@@ -71,13 +71,15 @@ public class ApplicationLauncherRegistrar {
         }
         applicationLauncher.set(new WaxSimApplicationLauncher(configuration.get(), waxSim.getBinary()));
         ready.fire(new IOSReady());
-    }
-
-    public void killall(@Observes AfterSuite event) throws IOException {
-        if (configuration.get().isSkip()) {
-            return;
-        }
-        ProcessExecutor.execute("killall", "iPhone Simulator");
+        Runtime.getRuntime().addShutdownHook(new Thread() {
+            @Override
+            public void run() {
+                try {
+                    ProcessExecutor.execute("killall", "iPhone Simulator");
+                } catch (IOException ignored) {
+                }
+            }
+        });
     }
 
 }
