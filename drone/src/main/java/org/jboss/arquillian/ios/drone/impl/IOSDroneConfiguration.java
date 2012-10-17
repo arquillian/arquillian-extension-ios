@@ -30,7 +30,7 @@ public class IOSDroneConfiguration implements DroneConfiguration<IOSDroneConfigu
     private String localSeleniumCopy;
     private String seleniumSvnRepository = IPhoneDriverApplication.SELENIUM_SVN_REPOSITORY;
     private boolean skip = false;
-    private int timeoutInSeconds = 10;
+    private int timeoutInSeconds = 60;
     private boolean verbose;
 
     public String getConfigurationName() {
