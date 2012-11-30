@@ -76,7 +76,7 @@ public class IPhoneDriverApplication implements Application {
         } catch (Exception ex) {
             throw new IOException("Can't checkout <" + svnRepository + ">.");
         }
-        File app = new File(repository, "iphone" + File.separator + "build" + File.separator + "Release-iphonesimulator" + File.separator + "iWebDriver.app");
+        File app = new File(repository, "iphone" + File.separator + "build" + File.separator + "Debug-iphonesimulator" + File.separator + "iWebDriver.app");
         if (!app.exists()) {
             LOG.log(Level.INFO, "<{0}> doesn''t exist, so building selenium.", app.getAbsolutePath());
             List<String> goOutput = ProcessExecutor.execute(repository, "./go", "iphone");
